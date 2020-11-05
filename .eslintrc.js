@@ -18,12 +18,8 @@ module.exports = {
   plugins: ['react', 'jsx-a11y', 'prettier', 'jest'],
   rules: {
     'no-underscore-dangle': 'off',
-    'no-console': 'error',
-    /**
-     * We get false positives from instances where react is used  to customize
-     * Strapi admin UI
-     */
+    'no-console': 'warn',
     'react/jsx-filename-extension': 'off',
-    'react/forbid-prop-types': 'off',
+    'no-unused-vars': 'warn',
   },
 };
